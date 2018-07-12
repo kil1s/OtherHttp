@@ -1,4 +1,4 @@
-package org.schabi.newpipe.http.resp.status;
+package com.github.FlorianSteenbuck.other.http.resp.status;
 
 public interface HttpResponseStatus {
     String getMessage();

@@ -1,7 +1,6 @@
-package org.schabi.newpipe.http;
+package com.github.FlorianSteenbuck.other.http;
 
-import org.schabi.newpipe.extractor.HttpHeadExecutionTyp;
-import org.schabi.newpipe.extractor.exceptions.ReCaptchaException;
+import com.github.FlorianSteenbuck.other.http.resp.headers.HttpHeadExecutionTyp;
 
 import java.io.IOException;
 import java.util.List;
@@ -38,7 +37,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl, String language, byte[] body) throws IOException, ReCaptchaException;
+    String download(String siteUrl, String language, byte[] body) throws IOException;
 
 
     /**
@@ -50,7 +49,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl, String language) throws IOException, ReCaptchaException;
+    String download(String siteUrl, String language) throws IOException;
 
     /**
      * Download the text file at the supplied URL as in download(String),
@@ -61,7 +60,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl, Map<String, String> customProperties) throws IOException, ReCaptchaException;
+    String download(String siteUrl, Map<String, String> customProperties) throws IOException;
 
     /**
      * Download the text file at the supplied URL as in download(String),
@@ -73,7 +72,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl, Map<String, String> customProperties, byte[] body) throws IOException, ReCaptchaException;
+    String download(String siteUrl, Map<String, String> customProperties, byte[] body) throws IOException;
 
 
     /**
@@ -84,7 +83,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl) throws IOException, ReCaptchaException;
+    String download(String siteUrl) throws IOException;
 
     /**
      * Download (via HTTP) the text file located at the supplied URL, and return its contents.
@@ -94,7 +93,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    String download(String siteUrl, byte[] body) throws IOException, ReCaptchaException;
+    String download(String siteUrl, byte[] body) throws IOException;
 
     /**
      * Download the headers at the supplied URL as in download(String),
@@ -105,7 +104,7 @@ public interface HttpDownloader {
      * @return headers
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, String language, byte[] body, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, String language, byte[] body, HttpHeadExecutionTyp...typs) throws IOException;
 
 
     /**
@@ -117,7 +116,7 @@ public interface HttpDownloader {
      * @return the contents of the specified text file
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, String language, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, String language, HttpHeadExecutionTyp...typs) throws IOException;
 
     /**
      * Download the headers at the supplied URL as in download(String),
@@ -128,7 +127,7 @@ public interface HttpDownloader {
      * @return headers
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, Map<String, String> customProperties, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, Map<String, String> customProperties, HttpHeadExecutionTyp...typs) throws IOException;
 
     /**
      * Download the headers at the supplied URL as in download(String),
@@ -140,7 +139,7 @@ public interface HttpDownloader {
      * @return headers
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, Map<String, String> customProperties, byte[] body, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, Map<String, String> customProperties, byte[] body, HttpHeadExecutionTyp...typs) throws IOException;
 
 
     /**
@@ -151,7 +150,7 @@ public interface HttpDownloader {
      * @return headers
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, HttpHeadExecutionTyp...typs) throws IOException;
 
     /**
      * Download (via HTTP) the headers located at the supplied URL, and return its contents.
@@ -161,5 +160,5 @@ public interface HttpDownloader {
      * @return headers
      * @throws IOException
      */
-    Map<String, List<String>> downloadHead(String siteUrl, byte[] body, HttpHeadExecutionTyp...typs) throws IOException, ReCaptchaException;
+    Map<String, List<String>> downloadHead(String siteUrl, byte[] body, HttpHeadExecutionTyp...typs) throws IOException;
 }

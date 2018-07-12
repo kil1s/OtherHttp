@@ -1,6 +1,6 @@
-package org.schabi.newpipe.http.resp;
+package com.github.FlorianSteenbuck.other.http.resp;
 
-import org.schabi.newpipe.http.resp.status.HttpResponseStatus;
+import com.github.FlorianSteenbuck.other.http.resp.status.HttpResponseStatus;
 
 public interface HttpResponse {
     HttpResponseStatus getStatus();

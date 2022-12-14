@@ -1,4 +1,4 @@
-package com.github.FlorianSteenbuck.other.http.resp.headers.keys;
+package com.github.kil1s.other.http.resp.headers.keys;
 
 public interface HttpRespHeadValue {
     String getOriginalValue();

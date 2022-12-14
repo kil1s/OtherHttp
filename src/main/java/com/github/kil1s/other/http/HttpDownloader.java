@@ -1,6 +1,6 @@
-package com.github.FlorianSteenbuck.other.http;
+package com.github.kil1s.other.http;
 
-import com.github.FlorianSteenbuck.other.http.resp.headers.HttpHeadExecutionTyp;
+import com.github.kil1s.other.http.resp.headers.HttpHeadExecutionTyp;
 
 import java.io.IOException;
 import java.util.List;

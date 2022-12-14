@@ -1,4 +1,4 @@
-package com.github.FlorianSteenbuck.other.http.resp.headers;
+package com.github.kil1s.other.http.resp.headers;
 
 public enum HttpHeadExecutionTyp {
     RANGE,
